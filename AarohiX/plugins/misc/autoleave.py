@@ -65,7 +65,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "~ الاتصال فارغ ، تم نزول حساب المساعد .",
+                        "~ ضاجو ونزلو كلهم شعندي باقي .",
                     )
                 except:
                     continue
