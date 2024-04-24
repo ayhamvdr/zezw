@@ -66,7 +66,7 @@ async def check_sudo_list(client, callback_query: CallbackQuery):
         sudo_users_caption = "<u><b>~ المنشئين :</b></u>\n"
 
         keyboard.append([InlineKeyboardButton(" ~ المطور . ", url=f"tg://openmessage?user_id={OWNER_ID}")])
-        keyboard.append([InlineKeyboardButton("~ مسح .",callback_data="close_data")])
+        keyboard.append([InlineKeyboardButton("~ دوس وشوف شيصير .",callback_data="close_data")])
         
         count = 1
         for user_id in SUDOERS:
