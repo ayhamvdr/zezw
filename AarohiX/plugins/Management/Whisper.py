@@ -45,7 +45,7 @@ async def _whisper(_, inline_query):
                 InlineQueryResultArticle(
                     title="➤ همسة وقتية",
                     description=f"ارسل همسة  وقتية الى  {user.first_name}!",
-                    input_message_content=InputTextMessageContent(f"☞ همسة وقتية للحلو  {user.first_name}.\nاكتب النص او الرسالة صامتة."),
+                    input_message_content=InputTextMessageContent(f"☞ همسة وقتية للحلو  {user.first_name}.\nاكتب النص او الرسالة بشكل سري."),
                     thumb_url="https://graph.org/file/865d7c00a11daae5185fc.jpg",
                     reply_markup=one_time_whisper_btn
                 )
