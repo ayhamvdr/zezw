@@ -19,8 +19,8 @@ async def _whisper(_, inline_query):
         mm = [
             InlineQueryResultArticle(
                 title="⦿ همسة ⦿",
-                description=f"@{BOT_USERNAME} [ معرف | ايدي ] [ النص ]",
-                input_message_content=InputTextMessageContent(f"⦿ الأستخدام:\n\n@{BOT_USERNAME} [ المعرف | الايدي ] [ النص ]"),
+                description=f"@{BOT_USERNAME} [ معرف او ايدي ] [ النص ]",
+                input_message_content=InputTextMessageContent(f"⦿ الأستخدام:\n\n@{BOT_USERNAME} [ المعرف او الايدي ] [ النص ]"),
                 thumb_url="https://graph.org/file/865d7c00a11daae5185fc.jpg",
                 reply_markup=switch_btn
             )
@@ -38,7 +38,7 @@ async def _whisper(_, inline_query):
                 InlineQueryResultArticle(
                     title="⦿ همسة ⦿",
                     description=f"ارسال الهمسة الى {user.first_name}!",
-                    input_message_content=InputTextMessageContent(f"⦿ تم ارسال همسة للحلو Tᴏ {user.first_name}.\n\nاكتب الرستلة النص/صامته."),
+                    input_message_content=InputTextMessageContent(f"⦿ تم ارسال همسة للحلو  {user.first_name}.\n  💬لأرسال همسة اكتب معرف البوت ثم معرف الشخص ثم (الهمسة) \n ."),
                     thumb_url="https://graph.org/file/865d7c00a11daae5185fc.jpg",
                     reply_markup=whisper_btn
                 ),
@@ -96,16 +96,16 @@ async def whispes_cb(_, query):
     
     if len(data) > 3 and data[3] == "one":
         if user_id == to_user:
-            await query.edit_message_text("➤ الهسة  شفتها! !\n\nاضغط  على الزر لترسل همسة !", reply_markup=SWITCH)
+            await query.edit_message_text("➤ الهسة  شفتها !\n\nاضغط  على الزر لترسل همسة !", reply_markup=SWITCH)
 
 
 async def in_help():
     answers = [
         InlineQueryResultArticle(
-            title="⦿ همسة ⦿",
-            description=f"@همسة لمرة واحدة [المعرف او الايدي] [النص]",
+            title="⦿ همسة سرية ⦿",
+            description=f"همسة اكتب  [المعرف او الايدي] [النص]",
             input_message_content=InputTextMessageContent(f"**❍ الأستخدام:**\n\nفقط لمرة واحدة (اكتب معرف الشخص او الأيدي ) (الهمسة).\n\n**استخدام:**\nلمرة واحدة @المعرف  "),
-            thumb_url="https://te.legra.ph/file/70872d57cab08aa096a04.jpg",
+            thumb_url="https://graph.org/file/865d7c00a11daae5185fc.jpg",
             reply_markup=switch_btn
         )
     ]
