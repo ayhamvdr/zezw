@@ -8,7 +8,7 @@ from AarohiX import app
 from AarohiX.utils.decorators.readable_time import get_readable_time
 from AarohiX.utils.Databases.afkdb import add_afk, is_afk, remove_afk
 
-"""
+
 
 @app.on_message(filters.command(["afk", "سليب" ,"باي" ], prefixes=["/", "!", ""]))
 async def active_afk(_, message: Message):
@@ -380,3 +380,4 @@ async def chat_watcher_func(_, message):
             send = await message.reply_text(msg, disable_web_page_preview=True)
         except:
             return
+"""
