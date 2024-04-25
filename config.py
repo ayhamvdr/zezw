@@ -7,13 +7,13 @@ from pyrogram import filters
 load_dotenv()
 
 
-API_ID = int(getenv("API_ID", "24757025"))
+API_ID = int(getenv("API_ID", ""))
 
-API_HASH = getenv("API_HASH", "0f7f459f8afef5f49a42dd2738644bcb")
+API_HASH = getenv("API_HASH", "")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6060916360:AAG6S0JvL42GMHyPKWpt8gwpl-Ss3BQpIlE")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Music Milan")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "bot")
 
 Muntazer = getenv("muntazer", "")
 
@@ -29,7 +29,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
 OWNER_ID = int(getenv("OWNER_ID", "5598689784"))
 
-BOT_USERNAME = getenv("BOT_USERNAME" , "@MJPOBOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "")
 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
